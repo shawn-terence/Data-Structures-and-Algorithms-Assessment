@@ -27,3 +27,17 @@ def remove_duplicates(sequence):
             seen.add(element)
 
     return result
+
+#Question 3
+import re
+def word_frequency(sentence):
+    word_count = {}
+    words = re.findall(r'\w+', sentence.lower())
+
+    for word in words:
+        if word in word_count:
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
+
+    return word_count
