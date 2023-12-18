@@ -47,3 +47,18 @@ def word_frequency(sentence):
         else:
             word_count[word] = 1
     return word_count
+
+
+
+expression1 = "([]{})"
+expression2 = "([)]"
+print(is_balanced(expression1))
+print(is_balanced(expression2))
+
+input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
+result = remove_duplicates(input_sequence)
+print(result)
+
+sentence = ""#put any sentence to test
+result = word_frequency(sentence)
+print(result)
