@@ -15,3 +15,15 @@ def is_balanced(expression):
                 return False
 
     return len(stack) == 0
+
+ #Question 2
+def remove_duplicates(sequence):
+    seen = set()
+    result = []
+
+    for element in sequence:
+        if element not in seen:
+            result.append(element)
+            seen.add(element)
+
+    return result
